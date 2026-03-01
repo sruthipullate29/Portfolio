@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full page layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6d81a6, #75aaa7);
+  color: white;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* Huge Menu button on top-left */
+.menu-btn {
+  font-size: 2.5rem;       /* huge text */
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Logo stays on the right side */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+/* Hidden dropdown menu */
+#menu-list {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 60px; /* below navbar */
+  left: 20px; /* aligned under menu button */
+  background: #333;
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#menu-list li {
+  padding: 12px 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3rem;
+  transition: background 0.3s;
+}
+
+#menu-list li:hover {
+  background: #444;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 1.3rem; /* Increased font size */
+}
+
+nav li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Hero section */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Shining text effect */
+.hero h1 {
+  font-size: 3.5rem; /* Bigger heading */
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0%;}
+  100% { background-position: 200%;}
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.5rem; /* Larger paragraph */
+}
+
+.hero button {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 20px 45px;
+  border: none;
+  border-radius: 35px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00);
+  background-size: 200%;
+  color: white;
+  cursor: pointer;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* Features section positioned top-right but lower */
+.features {
+  position: absolute;
+  top: 120px;              /* increased from 20px → moves section down */
+  right: 20px;
+  display: flex;
+  flex-direction: row;     /* side by side */
+  gap: 20px;
+}
+
+.feature-box {
+  background: #333;        /* darker grey */
+  color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  background: #444;        /* lighter grey on hover */
+}

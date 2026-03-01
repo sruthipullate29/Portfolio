@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰ MENU</div>
+    <div class="logo">Make Your Dream</div>
+    <ul id="menu-list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Login</li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><center>Build Your Professional Portfolio Effortlessly</center></h1>
+        <p>Create. Showcase. Get Recommended.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">Portfolio Builder</div>
+        <div class="feature-box">Resume Generator</div>
+        <div class="feature-box">Smart Job Suggestions</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ProjectName. All rights reserved.</p>
+    </footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menu-list");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
