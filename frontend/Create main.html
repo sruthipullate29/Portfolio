@@ -11,11 +11,11 @@
 <!-- Navbar -->
 <nav>
     <div class="menu-btn" onclick="toggleMenu()">☰ MENU</div>
-    <div class="logo">Make Your Dream</div>
+    <div class="logo">Build Your Dream</div>
     <ul id="menu-list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Login</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
     </ul>
 </nav>
 
@@ -27,11 +27,17 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features">
-        <div class="feature-box">Portfolio Builder</div>
-        <div class="feature-box">Resume Generator</div>
-        <div class="feature-box">Smart Job Suggestions</div>
-    </section>
+   <section class="features">
+    <div class="feature-box" onclick="window.location.href='portfolio.html'" style="cursor:pointer;">
+        Portfolio Builder
+    </div>
+    <div class="feature-box" onclick="window.location.href='resume.html'" style="cursor:pointer;">
+        Resume Generator
+    </div>
+    <div class="feature-box" onclick="window.location.href='job.html'" style="cursor:pointer;">
+        Smart Job Suggestions
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
