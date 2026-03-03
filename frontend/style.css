@@ -172,3 +172,12 @@ nav li:hover {
   transform: translateY(-8px);
   background: #444;        /* lighter grey on hover */
 }
+footer {
+  width: 100%; /* aligns footer with body */
+  background: rgba(0,0,0,0.7);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: auto;
+  font-size: 20px;
+}
