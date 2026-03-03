@@ -73,22 +73,18 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
-  font-size: 1.6rem; /* increased from 1.3rem */
+  font-size: 1.6rem;
 }
-
-/* Change dropdown menu background to grey */
 #menu-list {
-  display: none; /* hidden by default */
+  display: none; 
   position: absolute;
-  top: 60px; /* below navbar */
-  left: 20px; /* aligned under menu button */
-  background: grey; /* changed from #333 */
+  top: 60px; 
+  left: 20px; 
+  background: grey; 
   list-style: none;
   padding: 10px;
   border-radius: 8px;
 }
-
-
 nav li {
   cursor: pointer;
   padding: 10px 20px;
