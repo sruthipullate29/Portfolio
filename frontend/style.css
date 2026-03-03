@@ -20,7 +20,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(5, 5, 5, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ nav {
 }
 
 .menu-btn:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(41, 39, 39, 0.2);
 }
 
 /* Logo stays on the right side */
@@ -69,15 +69,25 @@ nav {
   transition: background 0.3s;
 }
 
-#menu-list li:hover {
-  background: #444;
-}
 nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
-  font-size: 1.3rem; /* Increased font size */
+  font-size: 1.6rem; /* increased from 1.3rem */
 }
+
+/* Change dropdown menu background to grey */
+#menu-list {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 60px; /* below navbar */
+  left: 20px; /* aligned under menu button */
+  background: grey; /* changed from #333 */
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 
 nav li {
   cursor: pointer;
